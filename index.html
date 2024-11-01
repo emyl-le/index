@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floristerías Cercanas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.main-header {
+    background: linear-gradient(to right, #0E6251,  #5bb6a4);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.featured-store, .other-stores {
+    padding: 2rem;
+}
+
+.featured-store h2, .other-stores h2 {
+    font-size: 2rem;
+    color: #0E6251;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.store-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.store-card img {
+    width: 100%;
+    height: auto;
+}
+
+.store-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.store-card p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 1rem;
+}
+
+.visit-button {
+    background-color: #276961;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.visit-button:hover {
+    background-color: #0E6251;
+}
+
+.other-stores .store-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.store-card.featured {
+    width: 30%;
+    height: 10%;
+    margin: 0 auto 2rem;
+}
+
+.store-card:not(.featured) {
+    width: 250px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+footer {
+    background: linear-gradient(135deg, #0E6251, #5bb6a4);
+    color: #f0f0f0;
+    padding: 40px 20px;
+    margin-top: auto;
+    text-align: center;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-section {
+    max-width: 300px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-section h2 {
+    font-size: 1.6em;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #20ffd2;
+}
+
+.footer-section p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #dcdcdc;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 20px;
+    }
+
+    .footer-section {
+        margin-bottom: 0;
+        max-width: 300px;
+    }
+}
+
+</style>
+<body>
+    <header class="main-header">
+        <h1>Descubre las Mejores Floristerías</h1>
+        <p>Flores frescas para todas tus ocasiones especiales</p>
+    </header>
+
+    <section class="featured-store">
+        <h2>Floristería Destacada</h2>
+        <div class="store-card featured">
+            <img src="stuardo.jpg" alt="Floristería Principal">
+            <h3>Floristería Stuardo</h3>
+            <p>Ubicación: 5 Avenida Nte., Santa Tecla</p>
+            <p>Especialidades: Arreglos personalizados para bodas, aniversarios y más</p>
+            <button class="visit-button">Visitar Floristería</button>
+        </div>
+    </section>
+
+    <section class="other-stores">
+        <h2>Otras Floristerías que Podrían Interesarte</h2>
+        <div class="store-list">
+            <div class="store-card">
+                <img src="/rsueños.webp" alt="Floristería A">
+                <h3>Floristería</h3>
+                <p>...</p>
+                <button class="visit-button">Ver Más</button>
+            </div>
+            <div class="store-card">
+                <img src="/falma.webp" alt="Floristería B">
+                <h3>Floristería </h3>
+                <p>...</p>
+                <button class="visit-button">Ver Más</button>
+            </div>
+            <div class="store-card">
+                <img src="/jeternos.webp" alt="Floristería C">
+                <h3>Floristería </h3>
+                <p>...</p>
+                <button class="visit-button">Ver Más</button>
+            </div>
+        </div>
+    </section>
+
+     <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Sobre Nosotros</h2>
+                <p>CODECRAFTERS S.A de C.V. se especializa en desarrollar aplicaciones para floristerías, mejorando la personalización de arreglos florales y optimizando la experiencia del cliente.</p>
+            </div>
+            <div class="footer-section">
+                <h2>Contacto</h2>
+                <p>San Salvador, Ayutuxtepeque
+                    Av Independencia  Nº18</p>
+                <p>Tel: +503 7392 4199</p>
+                <p>Email: crafterscode17@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h2>Equipo de Desarrollo</h2>
+                <p>Diego Balmore Hernández Mor&aacute;n</p>
+                <p>Emely Leonor Juárez Morales</p>
+                <p>Jacob David Leiva Ferrer</p>
+                <p>Esteban Alejandro Mate L&uacute;e</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CODECRAFTERS S.A de C.V. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
